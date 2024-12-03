@@ -1,0 +1,857 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.container{
+    background-color: hsl(211, 68%, 94%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.container .box{
+    background-color:  hsl(0, 0%, 100%);
+    height: 100%;
+    width: 60%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.box .nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+.nav .showNotifications{
+    display: flex;
+    justify-content: space-between;
+}
+.notifications .notificationsN{
+    font-size: larger;
+    font-weight: bolder;
+}
+.notifications .countNotifications{
+    background-color:hsl(224, 21%, 14%) ;
+    color: white;
+    width: 2rem;
+    display: inline-block;
+    padding-left: 9px;
+    border-radius: 5px;
+}
+.showNotifications .read{
+    font-weight: 100;
+}
+.showNotifications .read:hover{
+    cursor: pointer;
+    color: hsl(224, 21%, 14%) ; 
+    font-weight: bold;
+}
+.box .Markprofile{
+    border-radius: 10px;
+    width: fit-content;
+    background-color:hsl(210, 60%, 98%) ;
+    padding-top: 10px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    transition-delay: 5000ms;
+}
+.Markprofile .ImageFollow{
+    display: flex;
+}
+
+.Markprofile .Markimage img{
+    padding-left: 10px;
+    margin-right: 10rem;
+    height: 40px;
+}
+.Markprofile .Markimage img:hover{
+    cursor: pointer;
+}
+.ImageFollow .follow button{
+    background-color: white ;
+    width: 70px;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(219, 85%, 26%) ;
+}
+.Markprofile .Markname{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.Markprofile .Markbio{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Markprofile .Followers{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box .Angelaprofile{
+    border-radius: 10px;
+    width: fit-content;
+    background-color:hsl(210, 60%, 98%) ;
+    padding-top: 10px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.Angelaprofile .ImageFollow{
+    display: flex;
+}
+
+.Angelaprofile .Angelaimage img{
+    padding-left: 10px;
+    margin-right: 10rem;
+    height: 40px;
+}
+.Angelaprofile .Angelaimage img:hover{
+    cursor: pointer;
+}
+.ImageFollow .follow button{
+    background-color: white ;
+    width: 70px;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(219, 85%, 26%) ;
+}
+.Angelaprofile .Angelaname{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.Angelaprofile .Angelabio{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Angelaprofile .Followers{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box .Jacobprofile{
+    border-radius: 10px;
+    width: fit-content;
+    background-color:hsl(210, 60%, 98%) ;
+    padding-top: 10px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.Jacobprofile .ImageFollow{
+    display: flex;
+}
+
+.Jacobprofile .Jacobimage img{
+    padding-left: 10px;
+    margin-right: 10rem;
+    height: 40px;
+}
+.Jacobprofile .Jacobimage img:hover{
+    cursor: pointer;
+}
+.ImageFollow .follow button{
+    background-color: white ;
+    width: 70px;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(219, 85%, 26%) ;
+}
+.Jacobprofile .Jacobname{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.Jacobprofile .Jacobbio{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Jacobprofile .Followers{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box .Rizkyprofile{
+    border-radius: 10px;
+    width: fit-content;
+    background-color:hsl(210, 60%, 98%) ;
+    padding-top: 10px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    transition-delay: 5000ms;
+}
+.Rizkyprofile .ImageFollow{
+    display: flex;
+}
+
+.Rizkyprofile .Rizkyimage img{
+    padding-left: 10px;
+    margin-right: 10rem;
+    height: 40px;
+}
+.Rizkyprofile .Rizkyimage img:hover{
+    cursor: pointer;
+}
+.ImageFollow .follow button{
+    background-color: white ;
+    width: 70px;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(219, 85%, 26%) ;
+}
+.Rizkyprofile .Rizkyname{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.Rizkyprofile .Rizkybio{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Rizkyprofile .Followers{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box .Kimberelyprofile{
+    border-radius: 10px;
+    width: fit-content;
+    background-color:hsl(210, 60%, 98%) ;
+    padding-top: 10px;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.Kimberelyprofile .ImageFollow{
+    display: flex;
+}
+#Kimberelyimage img {
+    padding-left: 10px;
+    margin-right: 10rem;
+    height: 40px;
+}
+.ImageFollow .Kimberelyimage img:hover{
+    cursor: pointer;
+}
+.ImageFollow .follow button{
+    background-color: white ;
+    width: 70px;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(219, 85%, 26%) ;
+}
+.Kimberelyprofile .Kimberelyname{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.Kimberelyprofile .Kimberelybio{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Kimberelyprofile .Followers{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box .Nathanprofile{
+    border-radius: 10px;
+    width: fit-content;
+    background-color:hsl(210, 60%, 98%) ;
+    padding-top: 10px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    transition-delay: 5000ms;
+}
+.Nathanprofile .ImageFollow{
+    display: flex;
+}
+
+.Nathanprofile .Nathanimage img{
+    padding-left: 10px;
+    margin-right: 10rem;
+    height: 40px;
+}
+.Nathanprofile .Nathanimage img:hover{
+    cursor: pointer;
+}
+.ImageFollow .follow button{
+    background-color: white ;
+    width: 70px;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(219, 85%, 26%) ;
+}
+.Nathanprofile .Nathanname{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.Nathanprofile .Nathanbio{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Nathanprofile .Followers{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.box .Annaprofile{
+    border-radius: 10px;
+    width: fit-content;
+    background-color:hsl(210, 60%, 98%) ;
+    padding-top: 10px;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    transition-delay: 5000ms;
+}
+.Annaprofile .ImageFollow{
+    display: flex;
+}
+
+.Annaprofile .Annaimage img{
+    padding-left: 10px;
+    margin-right: 10rem;
+    height: 40px;
+}
+.Annaprofile .Annaimage img:hover{
+    cursor: pointer;
+}
+.ImageFollow .follow button{
+    background-color: white ;
+    width: 70px;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid hsl(219, 85%, 26%) ;
+}
+
+.Annaprofile .Annaname{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.Annaprofile .Annabio{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Annaprofile .Followers{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.box .Mark{
+    background-color: hsl(211, 68%, 94%);
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.box .Mark:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.Mark .Markphoto{
+    float: left;
+}
+.Mark .Markphoto img{
+    width: 50px;
+    height:40px ;
+    padding-left: 10px;
+}
+.Mark .Marknotification{
+    padding-left: 70px;
+    padding-top: 5px;
+}
+.Marknotification .MarkN:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+
+.Marknotification .tournament:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+.Marknotification .Marktime{
+    color:hsl(219, 14%, 63%) ;
+    padding-top: 5px;
+}
+.Marknotification .dot1{
+    background-color: red;
+    display: inline-block;
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 7px;
+}
+.box .Angela{
+    background-color: hsl(211, 68%, 94%);
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.box .Angela:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.Angela .Angelaphoto{
+    float: left;
+}
+.Angela .Angelaphoto img{
+    width: 50px;
+    height:40px ;
+    padding-left: 10px;
+}
+.Angela .Angelanotification{
+    padding-left: 70px;
+    padding-top: 5px;
+}
+.Angelanotification .AngelaN:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+
+.Angelanotification .Angelatime{
+    color:hsl(219, 14%, 63%) ;
+    padding-top: 10px;
+}
+.Angelanotification .dot2{
+    background-color: red;
+    display: inline-block;
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 7px;
+}
+.box .Jacob{
+    background-color: hsl(211, 68%, 94%);
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.box .Jacob:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.Jacob .Jacobphoto{
+    float: left;
+}
+.Jacob .Jacobphoto img{
+    width: 50px;
+    height:40px ;
+    padding-left: 10px;
+}
+.Jacob .Jacobnotification{
+    padding-left: 70px;
+    padding-top: 5px;
+}
+.Jacobnotification .JacobN:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+.Jacobnotification .chess:hover{
+    cursor: pointer;
+    color: hsl(219, 85%, 26%) ; 
+}
+.Jacobnotification .Jacobtime{
+    color:hsl(219, 14%, 63%) ;
+    padding-top: 10px;
+}
+.Jacobnotification .dot3{
+    background-color: red;
+    display: inline-block;
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 7px;
+}
+.box .Rizky{
+    background-color: hsl(211, 68%, 94%);
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.box .Rizky:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.Rizky .Rizkyphoto{
+    float: left;
+}
+.Rizky .Rizkyphoto img{
+    width: 50px;
+    height:40px ;
+    padding-left: 10px;
+}
+.Rizky .Rizkynotification{
+    padding-left: 70px;
+    padding-top: 5px;
+}
+.Rizkynotification .RizkyN:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+#chevronUp{
+    display: none;
+}
+.Rizkynotification .Rizkytime{
+    color:hsl(219, 14%, 63%) ;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.Rizkynotification .dot4{
+    background-color: red;
+    display: inline-block;
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 7px;
+}
+.Rizky .Rizky-paragraph{
+    border: hsl(219, 12%, 42%) ;
+    width: 500px;
+    height: 60px;
+    margin-left:70px;
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-right: 10px;
+    background-color:hsl(211, 68%, 94%);
+    border-radius: 5px;
+    padding-bottom: 10px;
+    display: none;
+}
+.Rizky .Rizky-paragraph:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.box .Kimberely{
+    background-color: hsl(211, 68%, 94%);
+    height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+.box .Kimberely:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.Kimberely .KimberelyInfo{
+    padding-right: 480px;
+}
+.Kimberely .Kimberelyphoto img{
+    width: 50px;
+    height:40px ;
+    padding-left: 10px;
+}
+.Kimberely .chessImage img{
+    height: 60px;
+    width: 60px;
+    padding-right: 5px;
+}
+.Kimberelynotification .KimberelyN:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+.KimberelyInfo .Kimberelytime{
+    color:hsl(219, 14%, 63%) ;
+    padding-top: 5px;
+}
+.Kimberelynotification .dot5{
+    background-color: red;
+    display: inline-block;
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 7px;
+}
+.box .Nathan{
+    background-color: hsl(211, 68%, 94%);
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.box .Nathan:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.Nathan .Nathanphoto{
+    float: left;
+}
+.Nathan .Nathanphoto img{
+    width: 50px;
+    height:40px ;
+    padding-left: 10px;
+}
+.Nathan .Nathannotification{
+    padding-left: 70px;
+    padding-top: 5px;
+}
+.Nathannotification .NathanN:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+.Nathannotification .Nend:hover{
+    color: hsl(219, 85%, 26%);
+}
+.Nathannotification .Nathantime{
+    color:hsl(219, 14%, 63%) ;
+    padding-top: 5px;
+}
+.Nathannotification .dot6{
+    background-color: red;
+    display: inline-block;
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 7px;
+}
+.box .Anna{
+    background-color: hsl(211, 68%, 94%);
+    height: 80px;
+    padding-top: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.box .Anna:hover{
+    cursor: pointer;
+    background-color: hsl(211, 68%, 94%);
+}
+.Anna .Annaphoto{
+    float: left;
+}
+.Anna .Annaphoto img{
+    width: 50px;
+    height:40px ;
+    padding-left: 10px;
+}
+.Anna .Annanotification{
+    padding-left: 70px;
+    padding-top: 5px;
+}
+.Annanotification .AnnaN:hover{
+    cursor: pointer;
+    color:  hsl(219, 85%, 26%) ;
+}
+.Annanotification .Annatime{
+    color:hsl(219, 14%, 63%) ;
+    padding-top: 5px;
+}
+.Annanotification .dot7{
+    background-color: red;
+    display: inline-block;
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 7px;
+}
+
+
+@media only screen and (max-width:400px){
+    .container{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .container .box{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .box .Mark{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Mark .Marknotification{
+        padding-right: 10px;
+    }
+    .Mark .Marktime{
+        padding-bottom: 5px;
+    }
+    .box .Angela{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Angela .Angelanotification{
+        padding-right: 10px;
+    }
+    .Angela .Angelatime{
+        padding-bottom: 5px;
+    }
+    .box .Jacob{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Jacob .Jacobnotification{
+        padding-right: 10px;
+    }
+    .jacob .Jacobtime{
+        padding-bottom: 5px;
+    }
+    .box .Rizky{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Rizky .Rizkynotification{
+        padding-right: 10px;
+    }
+    .Rizky .Rizkytime{
+        padding-bottom: 5px;
+    }
+    .Rizky .Rizky-paragraph{
+        border: hsl(219, 12%, 42%) ;
+        width: fit-content;
+        height: fit-content;
+    }
+    .box .Kimberely{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Kimberely .KimberelyInfo{
+        padding-right: 5px;
+        padding-left: 5px;
+        width: fit-content;
+    }
+    .Kimberely .Kimberelytime{
+        padding-bottom: 5px;
+    }
+    .Kimberely .chessImage img{
+        height: 50px;
+        width: 50px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .box .Nathan{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Nathan .Nathannotification{
+        padding-right: 10px;
+    }
+    .Nathan .Nathantime{
+        padding-bottom: 5px;
+    }
+    .box .Anna{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Anna .Annanotification{
+        padding-right: 10px;
+    }
+    .Anna .Annatime{
+        padding-bottom: 5px;
+    }
+    
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px){
+    .container{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .container .box{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .Rizky .Rizky-paragraph{
+        border: hsl(219, 12%, 42%) ;
+        width: fit-content;
+        height: fit-content;
+    }
+    .box .Kimberely{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Kimberely .KimberelyInfo{
+        padding-right: 10px;
+        padding-left: 10px;
+        width: fit-content;
+    }
+    .Kimberely .chessImage img{
+        padding-right: 5px;
+        padding-top: 5px;
+    
+    }
+}@media screen and (min-width: 600px) and (max-width: 1024px){
+    .container{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .container .box{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .box .Kimberely{
+        background-color: hsl(211, 68%, 94%);
+        height: fit-content;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+    .Kimberely .KimberelyInfo{
+        padding-right: 10px;
+        padding-left: 10px;
+        width: fit-content;
+    }
+    .Kimberely .chessImage img{
+        padding-right: 5px;
+        padding-top: 5px;
+    
+    }
+}
+
+
+
+
+
