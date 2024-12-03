@@ -289,7 +289,7 @@ function viewAnna(params) {
 viewAnna();
 
 
-function clearProfile(params) {
+/*function clearProfile(params) {
     const Markprofile = document.querySelector("#Markprofile");
     const Angelaprofile = document.querySelector("#Angelaprofile");
     const Jacobprofile = document.querySelector("#Jacobprofile");
@@ -311,7 +311,7 @@ function clearProfile(params) {
 
 }
 
-clearProfile();
+clearProfile();*/
 
 function follow(params) {
     const following1= document.getElementById("following1");
