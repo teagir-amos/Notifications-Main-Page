@@ -288,6 +288,31 @@ function viewAnna(params) {
 
 viewAnna();
 
+
+function clearProfile(params) {
+    const Markprofile = document.querySelector("#Markprofile");
+    const Angelaprofile = document.querySelector("#Angelaprofile");
+    const Jacobprofile = document.querySelector("#Jacobprofile");
+    const Rizkyprofile = document.querySelector("#Rizkyprofile");
+    const Kimberelyprofile = document.querySelector("#Kimberelyprofile");
+    const Nathanprofile = document.querySelector("#Nathanprofile");
+    const Annaprofile = document.querySelector("#Annaprofile");
+
+    window.addEventListener("click", function(){
+        document.getElementById("Markprofile").style.display = "none";
+        document.getElementById("Angelaprofile").style.display = "none";
+        document.getElementById("Jacobprofile").style.display = "none";
+        document.getElementById("Rizkyprofile").style.display = "none";
+        document.getElementById("Kimberelyprofile").style.display = "none";
+        document.getElementById("Nathanprofile").style.display = "none";
+        document.getElementById("Annaprofile").style.display = "none";
+
+    })
+
+}
+
+clearProfile();
+
 function follow(params) {
     const following1= document.getElementById("following1");
         following1.addEventListener("click", function(){
