@@ -289,29 +289,43 @@ function viewAnna(params) {
 viewAnna();
 
 
-/*function clearProfile(params) {
-    const Markprofile = document.querySelector("#Markprofile");
-    const Angelaprofile = document.querySelector("#Angelaprofile");
-    const Jacobprofile = document.querySelector("#Jacobprofile");
-    const Rizkyprofile = document.querySelector("#Rizkyprofile");
-    const Kimberelyprofile = document.querySelector("#Kimberelyprofile");
-    const Nathanprofile = document.querySelector("#Nathanprofile");
-    const Annaprofile = document.querySelector("#Annaprofile");
+const Markprofile = document.querySelector("#Markprofile");
+const MarkPhoto = document.querySelector("#Markphoto");
+const Angelaprofile = document.querySelector("#Angelaprofile");
+const Angelaphoto = document.querySelector("#Angelaphoto");
+const Jacobprofile = document.querySelector("#Jacobprofile");
+const Jacobphoto = document.querySelector("#Jacobphoto");
+const Rizkyprofile = document.querySelector("#Rizkyprofile");
+const Rizkyphoto = document.querySelector("#Rizkyphoto");
+const Kimberelyprofile = document.querySelector("#Kimberelyprofile");
+const Kimberelyphoto = document.querySelector("#Kimberelyphoto");
+const Nathanprofile = document.querySelector("#Nathanprofile");
+const Nathanphoto = document.querySelector("#Nathanphoto");
+const Annaprofile = document.querySelector("#Annaprofile");
+const Annaphoto = document.querySelector("#Annaphoto");
 
-    window.addEventListener("click", function(){
-        document.getElementById("Markprofile").style.display = "none";
-        document.getElementById("Angelaprofile").style.display = "none";
-        document.getElementById("Jacobprofile").style.display = "none";
-        document.getElementById("Rizkyprofile").style.display = "none";
-        document.getElementById("Kimberelyprofile").style.display = "none";
-        document.getElementById("Nathanprofile").style.display = "none";
-        document.getElementById("Annaprofile").style.display = "none";
+const hides =  [
+    document.getElementById("Markprofile"),
+    document.getElementById("Angelaprofile"),
+    document.getElementById("Jacobprofile"),
+    document.getElementById("Rizkyprofile"),
+    document.getElementById("Kimberelyprofile"),
+    document.getElementById("Nathanprofile"),
+    document.getElementById("Annaprofile")
+];
 
-    })
+window.addEventListener("click", function(){
+    hides.forEach(function(hide){
+        hide.style.display = "none"
+    });
+});
 
-}
+hides.forEach(function (hide) {
+    hide.addEventListener("click", function(event){
+        event.stopPropagation();
+    });
+});
 
-clearProfile();*/
 
 function follow(params) {
     const following1= document.getElementById("following1");
